@@ -1,0 +1,243 @@
+.{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background: url("https://lh3.googleusercontent.com/proxy/IfMo_DRwnoNtPup35sqTi0jAY42YwwfYd498oAtA87uD8AYR2mxz09SAQoaIudgoOJDjPIArXsbyO22jK_FR0boWt0XqnZmh3BY");
+}
+.boxImg{
+    width: 500px;
+    height: 280px;
+    border: solid darkseagreen 5px;
+    overflow:hidden; 
+    position: relative;
+    border-radius: 20px;
+}
+.boxImg img{
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+}
+.wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+.container:before, .container:after{
+    content: '';
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #ccc;
+    transform: 1s;
+    opacity: 0.1;
+}
+.container:before{
+    transform: translateX(-125%) rotate(45deg);
+    
+}
+.container:after{
+    transform: translateX(195%) rotate(45deg);
+    
+}
+.text{
+    position: absolute;
+    top: 10%;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+    font-family: sans-serif;
+}
+.text h1{
+    margin-bottom: 15px;
+    font-size: 30px;
+    transition: 0.5s;
+    transform: scale(0);
+}
+.text p{
+    margin: 0 100px;
+    font-size: 18px;
+    text-align: justify;
+    transform: scale(2);
+    opacity: 0;
+    transition: 0.5s;
+}
+a.btn{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: solid #fff 2px;
+    margin-top: 20px;
+    transition: 0.5s;
+    opacity: 0;
+}
+a.btn:active{
+    border: solid #b1b3b3 2px;
+}
+.boxImg:hover img{
+    filter: blur(2px);
+    transform: rotate(-5deg) scale(1.1);
+    
+}
+.boxImg:hover .text h1{
+    transform: scale(1);
+    
+}
+.boxImg:hover .text p{
+    transform: scale(1);
+    opacity: 1;
+    
+}
+.boxImg:hover a.btn{
+    opacity: 1;
+    
+}
+.boxImg:hover .container::before{
+    transform: translateX(92%) rotate(45deg) scale(2);
+    transition: 0.5s;
+    opacity: 0.4;
+}
+.boxImg:hover .container::after{
+    transform: translateX(-25%) rotate(-45deg) scale(2);
+    transition: 0.5s;
+    opacity: 0.4;
+}
+.title{
+    font-size: 40px;
+    font-style: oblique;
+    font-family: "Arial";
+    color: darkseagreen;
+    border-bottom: solid darkseagreen 3px;
+    display: inline-block;
+    margin-left: 500px;
+}
+.subtitle{
+    font-size: 30px;
+    font-style: italic;
+    font-family: "Arial";
+    color: darkseagreen;
+    display: inline-block;
+    margin-left: 600px;
+}
+.menu nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Arial";
+    margin: 30px;
+    color: green;
+    padding: auto;
+    
+}
+.menu nav ul li{
+    display: inline-block;
+    background-color: palegreen;
+    border: solid green 3px;
+    margin: 0;
+    width: auto;
+    cursor: pointer;
+    padding: 8px;
+    position: relative;
+    transition: 0.5s;
+    
+}
+.menu nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    margin-left: 150px;
+    padding: 0;
+    
+}
+.menu nav ul li:hover{
+    background-color: limegreen;
+}
+.site{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: limegreen;
+    font-style: oblique;
+    text-align: center;
+}
+span{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: limegreen;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+.news h2{
+    text-align: center;
+    font-style: oblique;
+    font-size: 30px;
+    color: limegreen;
+    font-family: sans-serif;
+    border-bottom: solid palegreen 2px;
+}
+.news-block h3{
+    text-align: center;
+    font-size: 25px;
+    color: limegreen;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.news-block p{
+    text-align: center;
+    font-size: 20px;
+    color: limegreen;
+    font-family: sans-serif;
+}
+.news-block h4{
+    font-size: 20px;
+    color: limegreen;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+.news-block{
+    border-bottom: solid palegreen 2px;
+}
+.meme-title{
+    text-align: center;
+    color: limegreen;
+    font-style: oblique;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin: 15px;
+}
+.thanks{
+    text-align: center;
+    color: limegreen;
+    font-style: italic;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-top: 350px;
+}
+.sobaka{
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+.sobaka-block{
+    width: 300px;
+    height: 300px;
+    margin-left: 500px;
+}
